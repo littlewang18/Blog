@@ -1,6 +1,12 @@
 # Blog
 gin+React Blog
 
+前端主要用React框架
+在后台管理界面使用了antd UI框架以及Vditor富文本编辑器
+
+后端界面主要使用的是gin框架和gorm
+同时感谢七牛云的大力支持
+
 > 文件目录如下
 
 ``` 
