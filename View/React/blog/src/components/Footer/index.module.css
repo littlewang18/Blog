@@ -1,0 +1,23 @@
+.Footer{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    user-select: none;
+    animation: Gradient 10s ease infinite;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.words{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Rubik', sans-serif;
+}

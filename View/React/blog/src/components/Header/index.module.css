@@ -1,0 +1,244 @@
+*{
+    text-decoration:none;
+    list-style:none;
+    outline:none;
+}
+
+.Header{
+    position: fixed;
+    top: 0px;
+    width:100%;
+    display:table;
+    background-color:rgba(255, 255, 255, 0.1);
+    z-index: 2;
+}
+
+.Section{
+    height: 100%;
+    width:100%;
+    max-width:1200px;
+    margin:0px auto;
+    display:table;
+    position:relative;
+}
+
+.Logo{
+    float:left;
+    font-size:24px;
+    text-transform:uppercase;
+    color:#002e5b;
+    font-weight:600;
+    padding:20px 0px;
+}
+
+.Nav{
+    width:auto;
+    float:right;
+}
+
+.Ul{
+    display:table;
+    float:right;
+}
+
+.Li{
+    float:left;
+}
+
+.Li:last-child{
+    padding-right:0px;
+}
+
+.Link{
+    color:#002e5b;
+    font-size:18px;
+    padding: 25px 20px;
+    display:inline-block;
+    transition: all 0.5s ease 0s;
+}
+
+.Link:hover{
+    background-color:#002e5b;
+    color:#fde428;
+    transition: all 0.5s ease 0s;
+}
+
+.Link:hover i{
+    color:#fde428;
+    transition: all 0.5s ease 0s;
+}
+
+.I{
+    padding-right:10px;
+    color:#002e5b;
+    transition: all 0.5s ease 0s;
+}
+
+.MenuUl{
+    display:table;
+    width:25px;
+}
+
+.MenuLi{
+    width:100%;
+    height:3px;
+    background-color:#002e5b;
+    margin-bottom:4px;
+}
+
+.MenuLi:last-child{
+    margin-bottom:0px;
+}
+
+
+input[type=checkbox], label{display:none;}
+
+
+.Himage{
+    height: 100vh;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 700px;
+    font-family: 'Rubik', sans-serif;
+    background-size: cover;
+    animation-name: comein_Himage;
+    animation-duration: 1s;
+}
+
+.image{
+    height: 400px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 300px;
+    font-family: 'Rubik', sans-serif;
+    background-size:cover;
+    background-position: center;
+    border-radius: 0 0 20px 20px ;
+    box-shadow: 10px 10px 10px var(--nitaia), -10px -10px 10px var(--nitaib);
+    animation-name: comein_image;
+    animation-duration: 1s;
+}
+
+.icon{
+    position: relative;
+    left:97vh;
+    top:-60vh;
+    width: 100px;
+    z-index: 9;
+}
+
+@media only screen and (max-width: 1440px) {
+    .Section{
+        max-width:95%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .Header{
+        padding:20px 0px;
+    }
+    .Logo{
+        padding:0px;
+    }
+
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        background:none;
+    }
+    input[type=checkbox]:fous{
+        background:none;
+    }
+    input[type=checkbox]:checked ~nav {display:block;}
+
+    .Menu{
+        float:right;
+        padding:8px 0px;
+        display:block;
+        cursor:pointer;
+    }
+
+    .Nav{
+        display:none;
+        position:absolute;
+        right:0px;
+        top:53px;
+        background-color:#002e5b;
+        padding:0px;
+        z-index:99;
+    }
+
+    .Ul{
+        width:auto;
+    }
+
+    .Li{
+        float:none;
+        padding:0px;
+        width:100%;
+        display:table;
+    }
+
+    .Link{
+        color:#FFF;
+        font-size:15px;
+        padding:10px 20px;
+        display:block;
+        border-bottom: 1px
+        solid rgba(225,225,225,0.1);
+    }
+
+    .Link{
+        color:#fde428;
+        padding-right:13px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Section {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .Menu{
+        padding:5px 0px;
+    }
+    .Logo{
+        font-size: 20px;
+    }
+    .Nav{
+        top:47px;
+    }
+}
+
+@keyframes comein_Himage {
+    0%   {height: 90vh;}
+    10%  {height: 91vh;}
+    20%  {height: 92vh;}
+    30%  {height: 93vh;}
+    40%  {height: 94vh;}
+    50%  {height: 95vh;}
+    60%  {height: 96vh;}
+    70%  {height: 97vh;}
+    80%  {height: 98vh;}
+    90%  {height: 99vh;}
+    100% {height: 100vh;}
+}
+
+@keyframes comein_image {
+    0%   {height: 350px;}
+    10%  {height: 355px;}
+    20%  {height: 360px;}
+    30%  {height: 365px;}
+    40%  {height: 370px;}
+    50%  {height: 375px;}
+    60%  {height: 380px;}
+    70%  {height: 385px;}
+    80%  {height: 390px;}
+    90%  {height: 395px;}
+    100% {height: 400px;}
+}
